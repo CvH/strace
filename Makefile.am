@@ -408,7 +408,7 @@ strace_LDADD += $(libiberty_LIBS)
 endif
 endif
 
-@CODE_COVERAGE_RULES@
+include $(top_srcdir)/aminclude_static.am
 CODE_COVERAGE_BRANCH_COVERAGE = 1
 CODE_COVERAGE_GENHTML_OPTIONS = $(CODE_COVERAGE_GENHTML_OPTIONS_DEFAULT) \
 	--prefix $(shell cd $(abs_top_srcdir)/.. && pwd || echo .)
